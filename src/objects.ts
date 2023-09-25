@@ -99,9 +99,8 @@ export function toMarkdown(question: Question): string {
     const step1 = "# " + question.name + "\n";
     const step2 = question.body;
     if (question.type === "multiple_choice_question") {
-        const extra = Object.keys(question.options)
-            .map((key) => "- " + question.options[key])
-            .join("\n");
+        const temp = Object.values(question.options);
+        const extra = temp.map((option) => `- ${option}`).join("\n");
         return step1 + step2 + "\n" + extra;
     } else {
         return step1 + step2;
