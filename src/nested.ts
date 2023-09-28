@@ -2,9 +2,7 @@ import { text } from "stream/consumers";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
 import { queries } from "@testing-library/react";
-import { type } from "os";
-import { addOption, duplicateQuestion, makeBlankQuestion } from "./objects";
-import { formatDiagnostic } from "typescript";
+import { duplicateQuestion, makeBlankQuestion } from "./objects";
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
