@@ -97,6 +97,7 @@ export function countShortWords(words: string[]): number {
  */
 export function allRGB(colors: string[]): boolean {
     const pass = ["red", "blue", "green"];
+
     if (!colors.length) {
         return true;
     }
@@ -133,11 +134,6 @@ export function makeMath(addends: number[]): string {
  *
  * For instance, the array [1, 9, -5, 7] would become [1, 9, -5, 10, 7]
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
- */
-
-/** notes---
- *
- *
  */
 export function injectPositive(values: number[]): number[] {
     //no negatives nums, at the end of the list, it has the sum.
