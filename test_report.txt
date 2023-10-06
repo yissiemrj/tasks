@@ -8,27 +8,97 @@ Browserslist: caniuse-lite is outdated. Please run:
 PASS src/nested.test.ts
 PASS src/arrays.test.ts
 PASS src/objects.test.ts
+PASS src/components/StartAttempt.test.tsx
+PASS src/components/TwoDice.test.tsx
 PASS src/HtmlCss.test.tsx
-PASS src/functions.test.ts
-PASS src/text.test.tsx
-PASS src/App.test.tsx
-----------------|---------|----------|---------|---------|-------------------
-File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------|---------|----------|---------|---------|-------------------
-All files       |   98.52 |    94.94 |     100 |   98.47 |                   
- src            |   98.52 |    94.94 |     100 |   98.47 |                   
-  App.tsx       |     100 |      100 |     100 |     100 |                   
-  arrays.ts     |     100 |      100 |     100 |     100 |                   
-  functions.ts  |   86.95 |       90 |     100 |   86.95 | 24,26,32          
-  nested.ts     |     100 |      100 |     100 |     100 |                   
-  objects.ts    |     100 |    92.85 |     100 |     100 | 57                
- src/interfaces |       0 |        0 |       0 |       0 |                   
-  answer.ts     |       0 |        0 |       0 |       0 |                   
-  question.ts   |       0 |        0 |       0 |       0 |                   
-----------------|---------|----------|---------|---------|-------------------
+  ● Console
 
-Test Suites: 7 passed, 7 total
-Tests:       49 passed, 49 total
+    console.error
+      Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+          at div
+          at RevealAnswer (/home/runner/work/tasks/tasks/src/components/RevealAnswer.tsx:13:35)
+          at p
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+
+PASS src/functions.test.ts
+PASS src/components/ChangeType.test.tsx
+PASS src/components/CycleHoliday.test.tsx
+PASS src/components/Counter.test.tsx
+PASS src/components/RevealAnswer.test.tsx
+PASS src/text.test.tsx
+  ● Console
+
+    console.error
+      Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+          at div
+          at RevealAnswer (/home/runner/work/tasks/tasks/src/components/RevealAnswer.tsx:13:35)
+          at p
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+
+PASS src/App.test.tsx
+  ● Console
+
+    console.error
+      Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+          at div
+          at RevealAnswer (/home/runner/work/tasks/tasks/src/components/RevealAnswer.tsx:13:35)
+          at p
+          at div
+          at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   98.71 |    95.57 |     100 |   98.67 |                   
+ src               |   98.52 |    94.94 |     100 |   98.47 |                   
+  App.tsx          |     100 |      100 |     100 |     100 |                   
+  arrays.ts        |     100 |      100 |     100 |     100 |                   
+  functions.ts     |   86.95 |       90 |     100 |   86.95 | 24,26,32          
+  nested.ts        |     100 |      100 |     100 |     100 |                   
+  objects.ts       |     100 |    92.85 |     100 |     100 | 57                
+ src/components    |     100 |      100 |     100 |     100 |                   
+  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
+  Counter.tsx      |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx |     100 |      100 |     100 |     100 |                   
+  TwoDice.tsx      |     100 |      100 |     100 |     100 |                   
+ src/interfaces    |       0 |        0 |       0 |       0 |                   
+  answer.ts        |       0 |        0 |       0 |       0 |                   
+  question.ts      |       0 |        0 |       0 |       0 |                   
+-------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 13 passed, 13 total
+Tests:       101 passed, 101 total
 Snapshots:   0 total
-Time:        4.833 s
+Time:        8.021 s
 Ran all test suites.
