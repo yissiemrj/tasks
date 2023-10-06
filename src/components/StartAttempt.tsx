@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 
 const startAttempt = 4;
 //const [state, setState] = useState<number>(initialValue);
+
 export function StartAttempt(): JSX.Element {
     //setting attempt number
     const [attempts, setAttempt] = useState<number>(startAttempt);
