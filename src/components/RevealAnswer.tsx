@@ -8,6 +8,7 @@ The text 42 is not initially visible.
 When the button is clicked, the text 42 should be visible.
  */
 //ex: const [state, setState] = useState<number>(initialValue);
+
 export function RevealAnswer(): JSX.Element {
     const [visible, setVisible] = useState<boolean>(false);
     function flipVisibility(): void {
