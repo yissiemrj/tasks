@@ -1,6 +1,11 @@
-import React from "react";
+import React from "react"; //add this to the APP from useState
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { ChangeType } from "./components/ChangeType";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
 
 function App(): JSX.Element {
     return (
@@ -39,6 +44,25 @@ function App(): JSX.Element {
                 src="https://cdn10.bostonmagazine.com/wp-content/uploads/2014/11/cat-cafe.jpg"
                 alt="A picture of coffee cat :3"
             />
+            <p>
+                <RevealAnswer></RevealAnswer>
+                ---------------------
+            </p>
+            <p>
+                <ChangeType></ChangeType>
+                ---------------------
+            </p>
+            <p>
+                <StartAttempt></StartAttempt>
+                -------------------------
+            </p>
+            <p>
+                <TwoDice></TwoDice>
+                -------------------
+            </p>
+            <p>
+                <CycleHoliday></CycleHoliday>
+            </p>
         </div>
     );
 }
