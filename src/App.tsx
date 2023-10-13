@@ -1,6 +1,6 @@
 import React from "react"; //add this to the APP from useState
 import "./App.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { ChangeType } from "./components/ChangeType";
 import { StartAttempt } from "./components/StartAttempt";
