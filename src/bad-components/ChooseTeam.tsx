@@ -11,10 +11,10 @@ const PEOPLE = [
 ];
 
 export function ChooseTeam(): JSX.Element {
-    const [allOptions, setAllOptions] = useState<string[]>(PEOPLE);
+    const [allOptions] = useState<string[]>(PEOPLE);
     const [team, setTeam] = useState<string[]>([]);
 
-    const [newMember, setMember] = useState<string>(PEOPLE[0]);
+    const [, setMember] = useState<string>(PEOPLE[0]);
 
     function chooseMember(option: string) {
         setMember(option);
