@@ -1,6 +1,6 @@
 import React from "react"; //add this to the APP from useState
 import "./App.css";
-import { Button } from "react-bootstrap";
+//import { Button, Col, Container, Row } from "react-bootstrap";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { ChangeType } from "./components/ChangeType";
 import { StartAttempt } from "./components/StartAttempt";
@@ -12,6 +12,12 @@ import { ColoredBox } from "./bad-components/ColoredBox";
 import { ShoveBox } from "./bad-components/ShoveBox";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 
+import { ChangeColor } from "./form-components/ChangeColor";
+import { CheckAnswer } from "./form-components/CheckAnswer";
+import { GiveAttempts } from "./form-components/GiveAttempts";
+import { EditMode } from "./form-components/EditMode";
+import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
+
 function App(): JSX.Element {
     return (
         <div className="App">
@@ -19,7 +25,19 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript. Miryam Ramirez
             </header>
             <hr></hr>
-
+            <CheckAnswer expectedAnswer="42"></CheckAnswer>
+            <hr></hr>
+            <GiveAttempts></GiveAttempts>
+            <hr></hr>
+            <EditMode></EditMode>
+            <hr></hr>
+            <ChangeColor></ChangeColor>
+            <hr></hr>
+            <MultipleChoiceQuestion
+                options={["a", "b", "c"]}
+                expectedAnswer="b"
+            ></MultipleChoiceQuestion>
+            <hr></hr>
             <ShoveBox></ShoveBox>
             <ColoredBox></ColoredBox>
             <DoubleHalf></DoubleHalf>
