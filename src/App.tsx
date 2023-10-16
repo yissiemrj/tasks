@@ -11,6 +11,7 @@ import { DoubleHalf } from "./bad-components/DoubleHalf";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 import { ColoredBox } from "./bad-components/ColoredBox";
 import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): JSX.Element {
     return (
@@ -19,9 +20,9 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript. Miryam Ramirez.
                 Header Goes Here
             </header>
-            <ShoveBox></ShoveBox>
-            <ColoredBox></ColoredBox>
-            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            {/* <DoubleHalf></DoubleHalf> */}
+            <hr></hr>
             <ChooseTeam></ChooseTeam>
             <h1>Header Goes Here</h1>
             <ul>
